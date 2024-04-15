@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.background-image {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main-image {
+    max-width: 97%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.text-container h1 {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.text-container {
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 50%;
+    padding: 10px 30px;
+    max-width: 290px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
+
+.text-container button {
+    padding: 5px 20px;
+    background: #FFAECF;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.line {
+    height: 2px;
+    width: 400px;
+    background: linear-gradient(to right, #FFAECF 50%, rgba(255, 174, 207, 0) 100%);
+    margin-top: 8%;
+}
+
+
+
+/* SECTION CARDS BENEFICIOS*/
+
+
+.benefits-section {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.benefits-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefits-title h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.benefits-title p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.benefits-container.carousel {
+    width: 90%;
+   margin: 0 auto;
+   
+}
+
+.benefits-box.carousel-cell {
+    border: 2px solid #FFAECF;
+    padding: 4% 8%;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.benefits-section .flickity-prev-next-button.previous {
+    display: none !important;
+}
+
+.benefits-section .flickity-prev-next-button.next {
+    display: none !important;
+}
+
+.benefits-section .flickity-page-dots .dot {
+    background: #000 !important;
+    opacity: 1 !important;
+}
+
+.benefits-section .flickity-page-dots .dot.is-selected {
+    background: transparent !important;
+    border: 2px solid #000;
+    height: 22px;
+    border-radius: 20px !important;
+    transform: rotate(45deg);
+    align-items: center !important;
+    margin-bottom: -5px;
+}
+
+/* DOWNLOAD */
+
+.link-download{
+    text-align: center;
+    background: #FFAECF;
+    padding: 30px;
+}
+.link-download a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+/* section slide */
+
+.image-wrapper{
+    max-width: 100vw;
+}
+.image-wrapper img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* BANER SLIDE */
+
+.banner-slider {
+    padding: 6% 10%;
+}
+.slide-content{
+    max-width: 100%;
+}
+.slide-content h2{
+    margin-bottom: 10px;
+}
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-cell img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-cell {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.flickity-prev-next-button {
+    background: transparent !important;
+}
+
+.banner-slider .flickity-prev-next-button.previous{
+    left: -40px !important;
+}
+
+.banner-slider .flickity-prev-next-button.next{
+    right: -40px !important;
+}
+
+.banner-slider .flickity-page-dots .dot{
+    background: #000 !important; 
+    opacity: 1 !important;
+}
+
+.banner-slider .flickity-page-dots .dot.is-selected {
+    background: transparent !important;
+    border: 2px solid #000;
+    height: 22px;
+    border-radius: 20px !important;
+    transform: rotate(45deg);
+    align-items: center !important;
+    margin-bottom: -5px;
+}
+
+
+/* SECTION REGRAS */
+
+.cashback-rules {
+    background-size: cover;
+    background-image: url('../imageGR.png');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 50px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.rules-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.rules-title{
+    margin-bottom: 20px;
+}
+
+.rule-item{
+    margin-bottom: 10px;
+}
+.rules-button.center {
+    display: block;
+    margin: 0 auto;
+    padding: 7px 25px;
+    background: #FFAECF;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 50px;
+    letter-spacing: 0.5px; 
+    cursor: pointer;
+}
+
+
+/* FAQ */
+
+.faq-section {
+    padding: 0px 10% 0 10%;
+    margin: 3% 0px;
+}
+
+.faq-section .faq-item {
+    border-bottom: 2px solid #d1d0d0;
+}
+
+.question-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.question-icon span {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icon-plus {
+    cursor: pointer;
+    color: #d1d0d0;
+    font-weight: bold;
+}
+
+.answer-faq {
+    display: none;
+    margin-bottom: 20px;
+}

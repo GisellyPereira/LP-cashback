@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box; 
+    font-family: "Inter", sans-serif;
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    position: relative;
+}
+
+.content {
+    max-width: 780px;
+    padding: 5% 5% 5% 10%;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 0.5px;            
+}
+
+.content-sub {
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 20px;
+    letter-spacing: 0.5px; 
+}
+
+.content button {
+    padding: 7px 25px;
+    background: #FFAECF;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 50px;
+    letter-spacing: 0.5px; 
+}
+
+.background-image, .main-image{ 
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.line {
+    height: 2px;
+    width: 600px;
+    background: linear-gradient(to right, #FFAECF 50%, rgba(255, 174, 207, 0) 100%);
+    margin-top: 20%;
+}
+
+
+/* QRCODE */
+.qr-code-container{
+    position: absolute;
+    background: #EAEAEA;
+    padding: 15px;
+    margin-top: -20px;
+    left: 0;
+    text-align: center;
+}
+.qr-code-container img{
+    max-width: 100%;
+}
+.txt-download{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px; 
+
+}
+
+
+
+/* SECTION CARDS BENEFIOS*/
+
+.benefits-section {
+    padding: 0px 10% 0 10%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.benefits-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.benefits-title h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.benefits-title p {
+    font-size: 16px;
+    letter-spacing: 0.5px; 
+}
+
+.benefits-container {
+    display: flex;
+    gap: 8%;
+}
+
+.benefits-box {
+    flex: 1;
+    width: calc(33.33% - 20px);
+    border: 2px solid #FFAECF;
+    padding: 4%;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    letter-spacing: 0.5px; 
+}
+.benefits-box:hover{
+    background-color: #FFAECF;
+    cursor: pointer;
+}
+.title-card-benefits{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* SECTION SLIDE */
+
+.banner-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0px;
+    padding: 0px 10% 0 10%;
+}
+.image-wrapper{
+    max-width: 100%;
+}
+.slide-content{
+    max-width: 100%;
+}
+.carousel {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-cell img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.carousel-cell {
+    width: 100%;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+    background: #ED2;
+}
+
+.flickity-prev-next-button {
+    background: transparent !important;
+}
+
+.flickity-prev-next-button.previous {
+    left: -50px !important;
+}
+
+.flickity-prev-next-button.next {
+    right: -50px !important;
+}
+
+.flickity-page-dots .dot {
+    background: #000 !important; 
+    opacity: 1 !important;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: transparent !important;
+    border: 2px solid #000;
+    height: 22px;
+    border-radius: 20px !important;
+    transform: rotate(45deg);
+    align-items: center !important;
+    margin-bottom: -5px;
+}
+
+
+
+/* SECTION REGRAS */
+
+.cashback-rules {
+    background-size: cover;
+    background-image: url('../imageGR.png');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 80px 0px;
+    color: #fff;
+}
+
+.rules-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.rules-title{
+    margin-bottom: 20px;
+}
+
+.rule-item{
+    margin-bottom: 10px;
+}
+.rules-button.center {
+    display: block;
+    margin: 0 auto;
+    padding: 7px 25px;
+    background: #FFAECF;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 50px;
+    letter-spacing: 0.5px; 
+    cursor: pointer;
+}
+
+
+/* SECTION FAQ */
+
+.faq-section {
+    padding: 0px 10% 0 10%;
+    margin: 3% 0px;
+}
+
+.faq-section .faq-item {
+    border-bottom: 2px solid #d1d0d0;
+}
+
+.question-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+}
+
+.question-icon span {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icon-plus {
+    cursor: pointer;
+    color: #d1d0d0;
+    font-weight: bold;
+}
+
+.answer-faq {
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1400px) {
+    .background-image {
+        max-width: 50%;
+        height: auto;
+    }
+    .main-image{
+        max-width: 48%;
+    }
+    .qr-code-container{
+        padding: 8px;
+    }
+    .qr-code-container img{
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        max-width: 500px;
+        padding: 5% 5% 5% 10%;
+    }
+    .content h1 {
+        font-size: 40px;           
+    }
+    .content-sub {
+        font-size: 20px; 
+    }
+    .content button {
+        padding: 5px 20px;
+        font-size: 18px;
+    }
+    .qr-code-container{
+        padding: 20px 0px;
+    }
+    .qr-code-container img{
+        max-width: 60%;
+    }
+    .txt-download{
+        font-size: 12px;
+    }
+   
+}
+
+@media (max-width: 992px) {
+    .benefits-section {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .benefits-container {
+        flex-direction: column;
+    }
+    .benefits-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .image-wrapper img{
+        max-width: 80%;
+    }
+    .slide-content{
+        max-width: 80%;
+    }
+    .cashback-rules {
+        padding: 80px 80px;
+    }
+    .rules-button.center{
+        padding: 5px 20px;
+        font-size: 16px;
+    }
+    
+}
+
+
+
