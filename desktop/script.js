@@ -1,12 +1,17 @@
-document.querySelectorAll('.icon-plus').forEach(item => {
-    item.addEventListener('click', () => {
-        const listItem = item.parentElement.nextElementSibling;
-        if (listItem.style.display === 'none' || listItem.style.display === '') {
-            listItem.style.display = 'block';
-            item.textContent = '-';
-        } else {
-            listItem.style.display = 'none';
-            item.textContent = '+';
-        }
+document.querySelectorAll('.question-icon').forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('.icon-plus');
+        toggleAnswer(answer, icon);
     });
 });
+
+function toggleAnswer(answer, icon) {
+    if (answer.style.display === 'none' || answer.style.display === '') {
+        answer.style.display = 'block';
+        icon.textContent = '-';
+    } else {
+        answer.style.display = 'none';
+        icon.textContent = '+';
+    }
+}
