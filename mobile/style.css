@@ -87,48 +87,72 @@
     letter-spacing: 0.5px;
 }
 
-.benefits-container.carousel {
+.carousel-cards {
     width: 90%;
-   margin: 0 auto;
-   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.benefits-box.carousel-cell {
+.benefits-box {
     border: 2px solid #FFAECF;
-    padding: 4% 8%;
     border-radius: 30px;
     box-sizing: border-box;
-    margin: 0 auto;
+    padding: 20px;
     letter-spacing: 0.5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 200px;
+    height: 200px !important;
+    margin-right: 10px;
+}
+.title-card-benefits{
+    font-weight: bold;
 }
 
-.benefits-section .flickity-prev-next-button.previous {
+.carousel-cards .slick-prev.slick-arrow:before,
+.carousel-cards .slick-next.slick-arrow:before {
     display: none !important;
 }
 
-.benefits-section .flickity-prev-next-button.next {
-    display: none !important;
+.carousel-cards .slick-dots {
+    position: absolute !important;
+    bottom: -40px !important;
+    width: 100% !important;
+    text-align: center !important;
+    list-style-type: none !important;
 }
 
-.benefits-section .flickity-page-dots .dot {
-    background: #000 !important;
+.carousel-cards .slick-dots li {
+    display: inline-block !important;
+    margin: 0 5px !important;
+}
+
+.carousel-cards.slick-dots li button {
+    font-size: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #000 !important;
+    border: none !important;
+    border-radius: 50% !important;
     opacity: 1 !important;
+    cursor: pointer !important;
 }
 
-.benefits-section .flickity-page-dots .dot.is-selected {
-    background: transparent !important;
-    border: 2px solid #000;
-    height: 22px;
-    border-radius: 20px !important;
-    transform: rotate(45deg);
+.carousel-cards .slick-dots li.slick-active button {
+    height: 24px !important;
+    width: 8px !important;
+    border-radius: 20px !important; 
+    background-color: transparent !important;
+    border: 2px solid #000 !important;
+    transform: rotate(45deg) !important;
     align-items: center !important;
     margin-bottom: -5px;
 }
+.carousel-cards .slick-dots li button:before{
+    display: none !important;
+}
+
 
 /* DOWNLOAD */
 
@@ -167,18 +191,7 @@
     margin-bottom: 10px;
     text-align: center;
 }
-.carousel {
-    max-width: 100%;
-    margin: 0 auto;
-}
 
-.carousel-cell img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(40%);
-    z-index: 0; 
-}
 
 .image-container {
     position: relative;
@@ -188,6 +201,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.container-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+    z-index: 0; 
+}
+
 
 .number {
     position: absolute;
@@ -213,38 +235,62 @@
     width: 60%;
 }
 
-.carousel-cell {
-    width: 100%;
-    position: relative;
+.slick-prev.slick-arrow:before {
+    content: ' ' ; 
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 24px !important; 
+    background: url('../Polygon 2.png') center center no-repeat;
 }
 
-.flickity-prev-next-button {
-    background: transparent !important;
+.slick-next.slick-arrow:before {
+    content: ' ' ; 
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 24px !important; 
+    background: url('../Polygon 1.png') center center no-repeat;
+}
+.slick-next:before {
+    font-family: initial !important;
+}
+.slick-prev:before {
+    font-family: initial !important;
+}
+.slick-dots {
+    position: absolute !important;
+    bottom: -50px !important;
+    width: 100% !important;
+    text-align: center !important;
+    list-style-type: none !important;
 }
 
-.flickity-prev-next-button.previous {
-    left: -50px !important;
+.slick-dots li {
+    display: inline-block !important;
+    margin: 0 5px !important;
 }
 
-.flickity-prev-next-button.next {
-    right: -50px !important;
-}
-
-.flickity-page-dots .dot {
-    background: #000 !important; 
+.slick-dots li button {
+    font-size: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #000 !important;
+    border: none !important;
+    border-radius: 50% !important;
     opacity: 1 !important;
+    cursor: pointer !important;
 }
 
-.flickity-page-dots .dot.is-selected {
-    background: transparent !important;
-    border: 2px solid #000;
-    height: 22px;
-    border-radius: 20px !important;
-    transform: rotate(45deg);
+.slick-dots li.slick-active button {
+    height: 28px !important;
+    border-radius: 20px !important; 
+    background-color: transparent !important;
+    border: 2px solid #000 !important;
+    transform: rotate(45deg) !important;
     align-items: center !important;
     margin-bottom: -5px;
 }
-
 
 
 /* SECTION REGRAS */
